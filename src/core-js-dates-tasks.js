@@ -74,8 +74,7 @@ function getNextFriday(date) {
   } else {
     delta = 7 - (currWeekDay - friday);
   }
-  const nextFriday = date.getDate() + delta;
-  date.setDate(nextFriday);
+  date.setDate(date.getDate() + delta);
   return date;
 }
 
